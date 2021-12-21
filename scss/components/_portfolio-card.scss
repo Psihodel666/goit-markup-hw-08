@@ -1,0 +1,88 @@
+.portfolio-main {
+    width: 100%;
+    padding-top: 92px;
+    padding-bottom: 96px;
+    .container-portfolio-card {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      li {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        &:nth-child(3n + 1) {
+          margin-left: 0;
+        }
+        &:nth-child(n + 7) {
+          margin-bottom: 0px;
+        }
+      }
+      .portfolio-card {
+        width: 370px;
+        background: #fff;
+        border: 1px solid #eeeeee;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        a {
+          text-decoration: none;
+          .portfolio-card-img-comteiner {
+            position: relative;
+            overflow: hidden;
+            .portfolio-card-hover-txt {
+              position: absolute;
+              color: #fff;
+              font-size: 18px;
+              line-height: 1.55;
+              top: 0;
+              left: 0;
+              background-color: #2196f3;
+              padding: 63px 24px;
+              height: 100%;
+              transform: translateY(100%);
+              transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+          }
+        }
+        
+        &:hover,
+        &:focus {
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        & a:hover .portfolio-card-hover-txt,
+        & a:focus .portfolio-card-hover-txt {
+          transform: translateY(0);
+          outline: none;
+        }
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+        .portfolio-card-txt-container {
+          padding: 20px 24px;
+          .portfolio-card-txt-one {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 2;
+            letter-spacing: 0.06em;
+            text-align: left;
+            color: var(--two-text-color);
+          } 
+          .portfolio-card-txt-two {
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.03em;
+            text-align: left;
+            color: var(--three-text-color);
+          }
+ 
+        }
+      }
+    }
+  }
+
+
+  
+
+
+ 

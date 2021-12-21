@@ -1,0 +1,154 @@
+.modal {
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    p {
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.17;
+    }
+}
+    .modal__btn-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: transparent;
+      &:hover,
+      &:focus {
+        fill: #2196f3;
+      }
+    }
+
+
+.modal__wrap {
+      padding: 40px;
+    }
+.modal-form {
+        margin-top: 12px;
+        label {
+          font-size: 12px;
+          line-height: 1.17;
+          color: var(--three-text-color);
+          letter-spacing: 0.03em;
+          display: flex;
+          flex-direction: column;
+          textarea {
+            width: 448px;
+            height: 138px;
+            padding: 12px 16px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            margin-top: 4px;
+            resize: none;
+            outline: none;
+            margin-top: 4px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &::placeholder {
+              color: rgba(117, 117, 117, 0.5);
+            }
+            &:focus {
+              border-color: #2196f3;
+            }
+          }
+        }
+.modal-form__input-wrap {
+          position: relative;
+          margin-top: 4px;
+          margin-bottom: 10px;
+          input {
+            width: 448px;
+            height: 40px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            padding: 12px 42px;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:focus {
+              border-color: #2196f3;
+            }
+            &::focus + svg {
+              fill: #2196f3;
+            }
+          }
+          svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 13px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+        
+}
+        .checkbox-modal__wrap {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          .checkbox-modal__txt {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a {
+              color: #2196f3;
+              margin-left: 2px;
+            }
+            &::before {
+              content: "";
+              width: 16px;
+              height: 15px;
+              border: 2px solid #212121;
+              margin-right: 8px;
+              border-radius: 4px;
+              display: block;
+              background-color: #fff;
+              cursor: pointer;
+              box-sizing: border-box;
+            }
+          }
+          
+          .checkbox-modal {
+            visibility: hidden;
+            &:checked + .checkbox-modal__txt::before {
+              background-color: #2196f3;
+              background-image: url(../images/icon-check.svg);
+              border-color: transparent;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      
+      
+      button {
+        width: 200px;
+        height: 50px;
+        margin-top: 40px;
+        transform: translateX(50%);
+        background-color: #2196f3;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+      }
+    }
+  

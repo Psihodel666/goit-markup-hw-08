@@ -1,0 +1,30 @@
+
+  .portfolio-btn {
+    display: flex;
+    justify-content: center;
+    .portfolio-button {
+      width: 100%;
+      padding: 6px 22px;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      color: var(--two-text-color);
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.63;
+      letter-spacing: 0.03em;
+      text-align: center;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: #2196f3;
+        color: #fff;
+        outline: none;
+      }
+    }
+    li + li{
+      margin-left: 8px;
+    }
+  }

@@ -1,0 +1,36 @@
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  .header-contact__item + .header-contact__item {
+    margin-left: 50px;
+  }
+  .header-contact__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--three-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.18;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .header-contact__icon {
+      margin-right: 10px;
+    }
+    &:focus,&:hover{
+      color: #2196f3;
+      outline: none;
+    }
+  }
+}
