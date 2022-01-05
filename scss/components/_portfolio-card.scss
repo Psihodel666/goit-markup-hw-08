@@ -2,19 +2,46 @@
     width: 100%;
     padding-top: 92px;
     padding-bottom: 96px;
+      @media screen and (min-width:480px) and (max-width:767px){
+       padding-bottom: 60px;
+       padding-top: 60px;
+      }
     .container-portfolio-card {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       margin-top: 50px;
+      @media screen and (min-width:480px) and (max-width:767px){
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+       }
       li {
         margin-left: 30px;
         margin-bottom: 30px;
+        @media screen and (min-width:480px) and (max-width:1023px){
+          margin-left: 0;
+         }
+        
         &:nth-child(3n + 1) {
           margin-left: 0;
         }
         &:nth-child(n + 7) {
           margin-bottom: 0px;
+          @media screen and (min-width:480px) and (max-width:767px){
+            margin-bottom: 30px;
+           }
+        }
+        &:last-child{
+          @media screen and (min-width:480px) and (max-width:767px){
+            margin-bottom: 0;
+           }
+        }
+        @media screen and (min-width:768px) and (max-width:1023px) {
+          &:nth-child(even){
+            margin-left: 30px;
+           }
+         
         }
       }
       .portfolio-card {
@@ -22,6 +49,12 @@
         background: #fff;
         border: 1px solid #eeeeee;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width:480px) and (max-width:767px){
+          width: 100%;
+         }
+         @media screen and (min-width:768px) and (max-width:1023px){
+         width: calc(50% - 30px);
+        }
         a {
           text-decoration: none;
           .portfolio-card-img-comteiner {
@@ -57,6 +90,9 @@
           display: block;
           max-width: 100%;
           height: auto;
+          @media screen and (min-width:480px) and (max-width:768px){
+            width: 100%;
+           }
         }
         .portfolio-card-txt-container {
           padding: 20px 24px;

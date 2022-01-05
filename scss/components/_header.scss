@@ -5,14 +5,30 @@
 .header__container {
   display: flex;
   align-items: center;
+  @media screen and (min-width:480px){
+    justify-content: space-between;
+  }
+  
 }
 
 
 .header-contact {
   display: flex;
   margin-left: auto;
+  @media screen and (min-width:320px) and (max-width:767px){
+    display: none;
+  }
+  @media screen and (min-width:768px) and (max-width:1024px){
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+
+  }
   .header-contact__item + .header-contact__item {
     margin-left: 50px;
+    @media screen and (min-width:768px) and (max-width:1024px){
+      margin-left: 0;
+    }
   }
   .header-contact__link {
     display: flex;
@@ -33,4 +49,22 @@
       outline: none;
     }
   }
+}
+.header_mobile-btn{
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+  border:none;
+  @media screen and (min-width:320px) {
+    display: flex;
+    align-items: center;
+   
+  }
+  @media screen and (min-width:768px){
+    display:none;
+  }
+}
+.header_mob-menu-icon{
+  fill:#000;
 }

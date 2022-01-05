@@ -20,6 +20,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .hero__txt {
+    font-size: 26px;
+  }
+}
+
 .hero__button {
   display: inline-block;
   color: var(--text-button);

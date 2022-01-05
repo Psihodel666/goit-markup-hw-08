@@ -18,6 +18,9 @@
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (min-width:480px){
+      font-size: 26px; 
+    }
   }
   .hero__button {
     display: inline-block;
