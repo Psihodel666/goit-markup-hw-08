@@ -52,8 +52,9 @@
         @media screen and (min-width:480px) and (max-width:767px){
           width: 100%;
          }
-         @media screen and (min-width:768px) and (max-width:1023px){
+         @media screen and (min-width:768px) and (max-width:1199px){
          width: calc(50% - 30px);
+         margin:0 auto;
         }
         a {
           text-decoration: none;

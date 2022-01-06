@@ -250,6 +250,44 @@ ul {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob/hero-mob-x1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-mob/hero-mob-x2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab/hero-tab-x1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1023px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-tab/hero-tab-x2.jpg);
+  }
+}
+
 .hero__txt {
   color: var(--main-title-color);
   font-size: 44px;
@@ -869,9 +907,10 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-main .container-portfolio-card .portfolio-card {
     width: calc(50% - 30px);
+    margin: 0 auto;
   }
 }
 
@@ -1343,7 +1382,7 @@ h2 {
 
 .close-mob-menu {
   margin-left: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-top: 10px;
   display: block;
   border: none;
@@ -1354,7 +1393,7 @@ h2 {
 }
 
 .close-mob-menu:hover, .close-mob-menu:focus {
-  color: #2196F3;
+  fill: #2196F3;
 }
 
 .mob-menu__link a {
@@ -1413,5 +1452,10 @@ h2 {
   line-height: 1.22;
   font-size: 18px;
   font-weight: 500;
+}
+
+.mob__container {
+  padding-left: 40px;
+  padding-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */

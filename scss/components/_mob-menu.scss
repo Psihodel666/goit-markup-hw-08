@@ -12,7 +12,7 @@
 }
 .close-mob-menu{
     margin-left: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-top: 10px;
     display: block;
     border: none;
@@ -21,7 +21,7 @@
     color: #212121;
     transition:250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     &:hover, &:focus{
-        color:#2196F3;
+        fill:#2196F3;
     }
 }
 .mob-menu__link{
@@ -79,4 +79,9 @@
             font-weight: 500;
         }
     }
+}
+.mob__container{
+    padding-left: 40px;
+    padding-right: 15px;
+    
 }
