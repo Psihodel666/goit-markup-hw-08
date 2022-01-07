@@ -24,8 +24,8 @@
         <nav>
             <a href="./index.html" class="logo link" lang="en">Web<span>Studio</span></a>
             <ul class="navigation-menu">
-                <li class="list"><a href="./index.html" class="navigation-menu__link link current">Студия</a> </li>
-                <li class="list"><a href="./portfolio.html" class="navigation-menu__link link">Портфолио</a> </li>
+                <li class="list"><a href="./index.html" class="navigation-menu__link link ">Студия</a> </li>
+                <li class="list"><a href="./portfolio.html" class="navigation-menu__link link current">Портфолио</a> </li>
                 <li class="list"><a href="#" class="navigation-menu__link link">Контакты</a> </li>
             </ul>
         </nav>
@@ -50,11 +50,39 @@
             </ul>
            
         
-            <button class="header_mobile-btn">
+            <button type="button" class="header_mobile-btn js-open-menu" data-menu-open>
                 <svg svg width="24"  height="16" fill = "currentColor" class="header_mob-menu-icon">
                     <use href="./images/icons.svg#icon-mob-menu-btn"></use>
                 </svg>
             </button>
+    
+            <div class="mob-menu mob__container is-hidden"  data-menu> 
+    
+            <div class="mob-menu__top">
+                <button class="close-mob-menu js-close-menu " data-menu-close>
+                    <svg svg width="19"  height="19" fill = "currentColor" class="header_mob-menu-icon">
+                        <use href="./images/icons.svg#icon-close_mobe"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu__link">
+                    <li class="list"><a href="" class="link">Студия</a></li>
+                    <li class="list"><a href="" class="link">Портфолио</a></li>
+                    <li class="list"><a href="" class="link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu__bottom">
+                <ul class="mob-menu__contact">
+                    <li class="list"><a href="" class="link">+38 096 111 11 11</a></li>
+                    <li class="list"><a href="" class="link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mob-menu__footer">
+                    <li class="list"><a href="" class="link">Instagram</a></li>
+                    <li class="list"><a href="" class="link">Twitter</a></li>
+                    <li class="list"><a href="" class="link">Facebook</a></li>
+                    <li class="list"><a href="" class="link">LinkedIn</a></li>
+                </ul>
+            </div>
+            </div>
     
     </div>
     </header>

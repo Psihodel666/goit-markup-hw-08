@@ -1238,6 +1238,12 @@ h2 {
   line-height: 1.17;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 .modal__btn-close {
   position: absolute;
   top: 8px;
