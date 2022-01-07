@@ -47,16 +47,16 @@
         </ul>
        
     
-        <button class="header_mobile-btn">
+        <button type="button" class="header_mobile-btn js-open-menu" data-menu-open>
             <svg svg width="24"  height="16" fill = "currentColor" class="header_mob-menu-icon">
                 <use href="./images/icons.svg#icon-mob-menu-btn"></use>
             </svg>
         </button>
 
-        <!-- <div class="mob-menu mob__container">
+        <div class="mob-menu mob__container is-hidden"  data-menu> 
 
-        <div class="mpb-menu__top">
-            <button class="close-mob-menu">
+        <div class="mob-menu__top">
+            <button class="close-mob-menu js-close-menu " data-menu-close>
                 <svg svg width="19"  height="19" fill = "currentColor" class="header_mob-menu-icon">
                     <use href="./images/icons.svg#icon-close_mobe"></use>
                 </svg>
@@ -79,7 +79,7 @@
                 <li class="list"><a href="" class="link">LinkedIn</a></li>
             </ul>
         </div>
-        </div> -->
+        </div>
 
 </div>
 </header>
@@ -549,5 +549,7 @@
         
         
         <script src="./js/modal.js"></script>
+        <script src="./js/mob-menu.js"></script>
+        
 </body>
 </html>

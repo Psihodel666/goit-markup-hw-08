@@ -5,9 +5,8 @@
 .header__container {
   display: flex;
   align-items: center;
-  @media screen and (min-width:480px){
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+ 
   
 }
 
@@ -15,10 +14,10 @@
 .header-contact {
   display: flex;
   margin-left: auto;
-  @media screen and (min-width:320px) and (max-width:767px){
+  @media screen and(max-width:767px){
     display: none;
   }
-  @media screen and (min-width:768px) and (max-width:1024px){
+  @media screen and (min-width:768px) and (max-width:1199px){
     display:flex;
     flex-direction: column;
     align-items: baseline;
@@ -26,7 +25,7 @@
   }
   .header-contact__item + .header-contact__item {
     margin-left: 50px;
-    @media screen and (min-width:768px) and (max-width:1024px){
+    @media screen and (min-width:768px) and (max-width:1199px){
       margin-left: 0;
     }
   }

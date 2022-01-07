@@ -2,7 +2,7 @@
   .portfolio-btn {
     display: flex;
     justify-content: center;
-    @media screen and (min-width:480px) and (max-width:768px){
+    @media screen  and (max-width:768px){
       flex-wrap: wrap;
       justify-content: start;
       width: 380px;
