@@ -45,9 +45,21 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 100%;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -204,8 +216,8 @@ ul {
 
 .header_mobile-btn {
   display: block;
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
 }
@@ -669,7 +681,14 @@ h2 {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .us-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .us-clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -758,13 +777,13 @@ h2 {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 797px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .us-clients__card {
     width: calc(50% - 15px);
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 797px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .us-clients__card:nth-child(n+3) {
     margin-top: 20px;
   }
@@ -774,12 +793,6 @@ h2 {
   .us-clients__card {
     width: calc(33% - 30px);
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .us-clients__card:nth-child(n+4) {
-    margin-top: 30px;
   }
 }
 
@@ -856,17 +869,17 @@ h2 {
   margin-top: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-main .container-portfolio-card {
+    margin-top: 14px;
+    width: 768px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-main .container-portfolio-card {
     margin-top: 40px;
     flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-main .container-portfolio-card {
-    align-items: center;
   }
 }
 
@@ -885,7 +898,7 @@ h2 {
   margin-left: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-main .container-portfolio-card li:nth-child(n+3) {
     margin-top: 30px;
   }
@@ -908,6 +921,12 @@ h2 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-main .container-portfolio-card .portfolio-card:not(:last-child) {
+    flex-grow: 1;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-main .container-portfolio-card .portfolio-card {
     width: 100%;
@@ -917,6 +936,12 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-main .container-portfolio-card .portfolio-card {
     width: calc(50% - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-main .container-portfolio-card .portfolio-card::last-child {
+    margin-top: 15px;
   }
 }
 
@@ -1123,7 +1148,11 @@ h2 {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form__wrap {
+    align-items: center;
     width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
   }
 }
 
@@ -1219,7 +1248,7 @@ h2 {
 }
 
 .modal {
-  min-width: 528px;
+  max-width: 528px;
   min-height: 581px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1236,6 +1265,7 @@ h2 {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1275,7 +1305,6 @@ h2 {
   font-size: 12px;
   line-height: 1.17;
   color: var(--three-text-color);
-  letter-spacing: 0.03em;
   display: flex;
   flex-direction: column;
 }
@@ -1301,6 +1330,12 @@ h2 {
   border-color: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form label textarea {
+    width: 100%;
+  }
+}
+
 .modal-form .modal-form__input-wrap {
   position: relative;
   margin-top: 4px;
@@ -1324,6 +1359,12 @@ h2 {
 
 .modal-form .modal-form__input-wrap input::focus + svg {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form .modal-form__input-wrap input {
+    width: 100%;
+  }
 }
 
 .modal-form .modal-form__input-wrap svg {
